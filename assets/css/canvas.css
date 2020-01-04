@@ -1,0 +1,44 @@
+
+.landing-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.landing-wrapper:before {
+    content: "";
+    background: #182d47 url(../../resources/bg.png) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    animation-name: background-animator;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.landing-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /*width: 100%;*/
+    /*height:100%;*/
+}
+
+.landing-wrapper:after {
+    box-shadow: inset 0 0 25vmin 0 #1b2c44;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
